@@ -4,7 +4,7 @@
 \alias{wandb_init}
 \title{Title}
 \usage{
-wandb_init(project, entity, learning_rate, architecture, dataset)
+wandb_init(project, learning_rate, architecture, dataset)
 }
 \arguments{
 \item{dataset}{}

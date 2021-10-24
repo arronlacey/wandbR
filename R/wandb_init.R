@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-wandb_init <- function(project,entity, learning_rate,architecture,dataset){
+wandb_init <- function(project,learning_rate,architecture,dataset){
   wandb$init(project=project, config=dict(list(learning_rate=learning_rate,
                                                architecture=architecture,
                                                dataset=dataset)))
