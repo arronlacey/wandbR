@@ -1,11 +1,33 @@
 Package: wandbR
-Title: What the Package Does (One Line, Title Case)
+Title: Interface to the Weights and Biases Python API.
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Arron", "Lacey", , "arronslacey@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Interface to the Weights and Biases Python API.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Depends:
+    R (>= 3.4)
+Imports:
+    generics (>= 0.0.1),
+    reticulate (>= 1.10),
+    tensorflow (>= 2.6.0),
+    tfruns (>= 1.0),
+    magrittr,
+    zeallot,
+    glue,
+    methods,
+    R6,
+    ellipsis,
+    rlang
+Suggests:
+    ggplot2,
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown,
+    callr,
+    tfdatasets,
+    jpeg
