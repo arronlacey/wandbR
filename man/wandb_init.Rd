@@ -4,7 +4,22 @@
 \alias{wandb_init}
 \title{Title}
 \usage{
-wandb_init(project, learning_rate, architecture, dataset)
+wandb_init(
+  project = NULL,
+  learning_rate = NULL,
+  architecture = NULL,
+  layer_1 = NULL,
+  activation_1 = NULL,
+  dropout = NULL,
+  layer_2 = NULL,
+  activation_2 = NULL,
+  optimizer = NULL,
+  loss = NULL,
+  metric = NULL,
+  epoch = NULL,
+  batch_size = NULL,
+  dataset = NULL
+)
 }
 \arguments{
 \item{dataset}{}

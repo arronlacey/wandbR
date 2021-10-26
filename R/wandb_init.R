@@ -21,7 +21,7 @@ wandb_init <- function(project=NULL,learning_rate=NULL,architecture=NULL,
                        metric= NULL,
                        epoch= NULL,
                        batch_size= NULL,
-                       dataset=NULL,
+                       dataset=NULL
                        ){
   wandb$init(project=project, config=dict(list(learning_rate=learning_rate,
                                                architecture=architecture,
