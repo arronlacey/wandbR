@@ -12,11 +12,4 @@ RoxygenNote: 7.1.2
 Imports:
     reticulate (>= 1.10),
     tensorflow (>= 2.6.0),
-    tfruns (>= 1.0),
-Suggests:
-    ggplot2,
-    knitr,
-    rmarkdown,
-    callr,
-    tfdatasets,
-    jpeg
+    tfruns (>= 1.0)
