@@ -4,7 +4,7 @@
 \alias{wandb_log}
 \title{Title}
 \usage{
-wandb_log()
+wandb_log(acc = NULL, loss = NULL, epoch = NULL)
 }
 \value{
 
