@@ -2,13 +2,20 @@
 % Please edit documentation in R/wandb_log.R
 \name{wandb_log}
 \alias{wandb_log}
-\title{Title}
+\title{wandb_log}
 \usage{
 wandb_log(acc = NULL, loss = NULL, epoch = NULL)
+}
+\arguments{
+\item{acc}{accuracy}
+
+\item{loss}{loss}
+
+\item{epoch}{epoch}
 }
 \value{
 
 }
 \description{
-Title
+Logs a dictionary of data to the current run's history.
 }
