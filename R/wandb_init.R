@@ -27,20 +27,26 @@ wandb_init <- function(project=NULL,learning_rate=NULL,architecture=NULL,
                        metric= NULL,
                        epoch= NULL,
                        batch_size= NULL,
-                       dataset=NULL
+                       dataset=NULL,
+                       config=NULL
                        ) {
-  wandb$init(project=project, config=dict(list(learning_rate=learning_rate,
-                                               architecture=architecture,
-                                               layer_1 = layer_1,
-                                               activation_1 = activation_1,
-                                               dropout = dropout,
-                                               layer_2 = layer_2,
-                                               activation_2 = activation_2,
-                                               optimizer = optimizer,
-                                               loss = loss,
-                                               metric = metric,
-                                               epoch = epoch,
-                                               batch_size = batch_size,
-                                               dataset=dataset)))
+
+  if (missing(config)) {
+    wandb$init(project=project, config=dict(list(learning_rate=learning_rate,
+                                                 architecture=architecture,
+                                                 layer_1 = layer_1,
+                                                 activation_1 = activation_1,
+                                                 dropout = dropout,
+                                                 layer_2 = layer_2,
+                                                 activation_2 = activation_2,
+                                                 optimizer = optimizer,
+                                                 loss = loss,
+                                                 metric = metric,
+                                                 epoch = epoch,
+                                                 batch_size = batch_size,
+                                                 dataset=dataset)))
+  } else {
+    do.call(wandb$init, config)
+  }
 }
 
