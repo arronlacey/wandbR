@@ -18,7 +18,8 @@ wandb_init(
   metric = NULL,
   epoch = NULL,
   batch_size = NULL,
-  dataset = NULL
+  dataset = NULL,
+  config = NULL
 )
 }
 \arguments{
