@@ -31,8 +31,7 @@ wandb_init <- function(project=NULL,learning_rate=NULL,architecture=NULL,
                        config=NULL
                        ) {
 
-  if (missing(config)) {
-    wandb$init(project=project, config=dict(list(learning_rate=learning_rate,
+wandb$init(project=project, config=dict(list(learning_rate=learning_rate,
                                                  architecture=architecture,
                                                  layer_1 = layer_1,
                                                  activation_1 = activation_1,
@@ -44,9 +43,7 @@ wandb_init <- function(project=NULL,learning_rate=NULL,architecture=NULL,
                                                  metric = metric,
                                                  epoch = epoch,
                                                  batch_size = batch_size,
-                                                 dataset=dataset)))
-  } else {
-    do.call(wandb$init, config)
-  }
+                                                 dataset = dataset,
+                                                 config = dict(config) )))
 }
 
