@@ -4,26 +4,29 @@
 \alias{wandb_init}
 \title{wandb_init}
 \usage{
-wandb_init(
-  project = NULL,
-  learning_rate = NULL,
-  architecture = NULL,
-  layer_1 = NULL,
-  activation_1 = NULL,
-  dropout = NULL,
-  layer_2 = NULL,
-  activation_2 = NULL,
-  optimizer = NULL,
-  loss = NULL,
-  metric = NULL,
-  epoch = NULL,
-  batch_size = NULL,
-  dataset = NULL,
-  config = NULL
-)
+wandb_init(project = NULL, entity = NULL, data = NULL, config = NULL)
 }
 \arguments{
-\item{dataset}{}
+\item{project}{(str, optional) The name of the project where you're sending the new run.
+If the project is not specified, the run is put in an "Uncategorized" project.}
+
+\item{entity}{(str, optional) An entity is a username or team name where you're
+sending runs. This entity must exist before you can send runs there, so make sure
+to create your account or team in the UI before starting to log runs.
+If you don't specify an entity, the run will be sent to your default entity,
+which is usually your username. Change your default entity in your settings under
+"default location to create new projects".}
+
+\item{config}{(dict, argparse, absl.flags, str, optional) This sets wandb.config,
+a dictionary-like object for saving inputs to your job, like hyperparameters for
+a model or settings for a data preprocessing job. The config will show up in a table
+in the UI that you can use to group, filter, and sort runs. Keys should not contain.
+in their names, and values should be under 10 MB. If dict, argparse or
+absl.flags: will load the key value pairs into the wandb.config object.
+If str: will look for a yaml file by that name, and load config from that file
+into the wandb.config object.}
+
+\item{dataset}{Specify an in-built dataset on Weights and Biases to run on.}
 }
 \value{
 
