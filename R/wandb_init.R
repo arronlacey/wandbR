@@ -30,7 +30,6 @@
 #' @examples
 wandb_init <- function(project=NULL,
                        entity = NULL,
-                       data=NULL,
                        config=NULL,
                        learning_rate=NULL,architecture=NULL,
                        layer_1= NULL,
@@ -45,7 +44,7 @@ wandb_init <- function(project=NULL,
                        batch_size= NULL
                        ) {
 
-wandb$init(project=project, entity = entity, data = data, config = dict(config),
+wandb$init(project=project, entity = entity, config = dict(config),
            learning_rate=learning_rate,
            architecture=architecture,
            layer_1 = layer_1,

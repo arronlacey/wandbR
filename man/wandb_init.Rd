@@ -7,7 +7,6 @@
 wandb_init(
   project = NULL,
   entity = NULL,
-  data = NULL,
   config = NULL,
   learning_rate = NULL,
   architecture = NULL,
