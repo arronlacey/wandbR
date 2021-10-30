@@ -41,7 +41,8 @@ wandb_init <- function(project=NULL,
                        loss= NULL,
                        metric= NULL,
                        epoch= NULL,
-                       batch_size= NULL
+                       batch_size= NULL,
+                       dataset = NULL
                        ) {
 
 wandb$init(project=project, entity = entity, config = dict(config),
@@ -56,6 +57,7 @@ wandb$init(project=project, entity = entity, config = dict(config),
            loss = loss,
            metric = metric,
            epoch = epoch,
-           batch_size = batch_size)
+           batch_size = batch_size,
+           dataset = dataset)
 }
 
