@@ -30,7 +30,20 @@
 #' @examples
 wandb_init <- function(project=NULL,
                        entity = NULL,
-                       config=NULL
+                       config=NULL,
+                       learning_rate=NULL,
+                       architecture=NULL,
+                       layer_1= NULL,
+                       activation_1=NULL,
+                       dropout= NULL,
+                       layer_2= NULL,
+                       activation_2= NULL,
+                       optimizer= NULL,
+                       loss= NULL,
+                       metric= NULL,
+                       epoch= NULL,
+                       batch_size= NULL,
+                       dataset=NULL
                        ) {
 
 wandb$init(project=project, entity = entity, config = dict(config))

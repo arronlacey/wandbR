@@ -4,7 +4,24 @@
 \alias{wandb_init}
 \title{wandb_init}
 \usage{
-wandb_init(project = NULL, entity = NULL, config = NULL)
+wandb_init(
+  project = NULL,
+  entity = NULL,
+  config = NULL,
+  learning_rate = NULL,
+  architecture = NULL,
+  layer_1 = NULL,
+  activation_1 = NULL,
+  dropout = NULL,
+  layer_2 = NULL,
+  activation_2 = NULL,
+  optimizer = NULL,
+  loss = NULL,
+  metric = NULL,
+  epoch = NULL,
+  batch_size = NULL,
+  dataset = NULL
+)
 }
 \arguments{
 \item{project}{(str, optional) The name of the project where you're sending the new run.
