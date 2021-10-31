@@ -14,6 +14,6 @@
 #' @examples
 wandb_agent <- function(sweep_id=NULL,func=NULL,entity=NULL,
                        project= NULL,count= NULL) {
-  wandb$agent(sweep_id = sweep_id, func = func, entity = entity,
+  wandb$agent(sweep_id = sweep_id, `function` = func, entity = entity,
               project = project, count = count)
 }
