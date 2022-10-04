@@ -1,6 +1,6 @@
 # wandbR
 
-Beginnings of an reticulate API to the Weights and Biases wandb python library.
+Beginnings of a reticulate API to the Weights and Biases wandb python library.
 
 Current functions working with basic utility: login, init, finish, log, WandbCallback, agent
 
